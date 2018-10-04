@@ -1,8 +1,963 @@
+
 <html>
-  <head>
-    <title>HKJC Auto Tips</title>
-  </head>
-  <body>
-    
-  </body>
-</html
+    <head>
+        <meta charset="Big5">
+        <title>HKJC Horse Tips</title>
+        <style>
+            body {
+                text-align: center;
+                background-image: url("https://wallpapermemory.com/uploads/475/horse-background-hd-1366x768-23293.jpg");
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+                margin-top:auto; 
+                padding-top: 30; 
+            }
+
+            h3 {
+                padding-top: -30; 
+                text-align: center;
+                margin-left:auto; 
+                margin-right:auto; 
+            }
+
+            table {
+                background-color: lightgray;
+                text-align: center;
+                margin-left:auto; 
+                margin-right:auto;
+            }
+
+            tr {
+                text-align: center;
+            }
+            th {
+                text-align: center;
+            }
+            td {
+                text-align: center;
+            }
+
+             /* Style the tab */
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+            }
+
+            /* Style the buttons that are used to open the tab content */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 6px 8px;
+                transition: 0.3s;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding-left: auto;
+                padding-right: auto;
+                border: 1px solid #ccc;
+                border-top: none;
+                font-size: 8px;
+            }
+
+        </style>
+
+        <script>
+            function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            } 
+        </script>
+    </head>
+    <body>
+        <a href="https://www.accuweather.com/zh/hk/hong-kong/1123655/weather-forecast/1123655" class="aw-widget-legal">
+        <!--
+        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+        -->
+        </a>
+        <div id="awcc1538663389073" class="aw-widget-current" data-locationkey="1123655" data-unit="c" data-language="zh-hk" data-useip="false" data-uid="awcc1538663389073">
+        </div>
+        <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+
+        <h1>2018/10/03</h1>
+        <h3><span style="display:none">race 1 | horse 9<br>
+race 2 | horse 5<br>
+race 2 | horse 6<br>
+race 2 | horse 7<br>
+race 5 | horse 11<br>
+race 8 | horse 3<br>
+</span></h3><br>
+        
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Race1')">場次1</button>
+          <button class="tablinks" onclick="openCity(event, 'Race2')">場次2</button>
+          <button class="tablinks" onclick="openCity(event, 'Race3')">場次3</button>
+          <button class="tablinks" onclick="openCity(event, 'Race4')">場次4</button>
+          <button class="tablinks" onclick="openCity(event, 'Race5')">場次5</button>
+          <button class="tablinks" onclick="openCity(event, 'Race6')">場次6</button>
+          <button class="tablinks" onclick="openCity(event, 'Race7')">場次7</button>
+          <button class="tablinks" onclick="openCity(event, 'Race8')">場次8</button>
+          <button class="tablinks" onclick="openCity(event, 'Race9')">場次9</button>
+          <button class="tablinks" onclick="openCity(event, 'Race10')">場次10</button>
+          <button class="tablinks" onclick="openCity(event, 'Race11')">場次11</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Race1" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>1</td>
+<td>10</td>
+<td>0.031250</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>2</td>
+<td>8</td>
+<td>0.025000</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>3</td>
+<td>13</td>
+<td>0.040625</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>4</td>
+<td>20</td>
+<td>0.062500</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>5</td>
+<td>58</td>
+<td>0.181250</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>6</td>
+<td>46</td>
+<td>0.143750</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>7</td>
+<td>25</td>
+<td>0.078125</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>8</td>
+<td>50</td>
+<td>0.156250</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">1</td>
+<td bgcolor="#FFC000">9</td>
+<td bgcolor="#FFC000">73</td>
+<td bgcolor="#FFC000">0.228125</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>10</td>
+<td>11</td>
+<td>0.034375</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>11</td>
+<td>2</td>
+<td>0.006250</td>
+</tr>
+<tr>
+
+<td>1</td>
+<td>12</td>
+<td>4</td>
+<td>0.012500</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race2" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>2</td>
+<td>1</td>
+<td>37</td>
+<td>0.123746</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0.006689</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>3</td>
+<td>28</td>
+<td>0.093645</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>0.010033</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">2</td>
+<td bgcolor="#FFC000">5</td>
+<td bgcolor="#FFC000">68</td>
+<td bgcolor="#FFC000">0.227425</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">2</td>
+<td bgcolor="#FFC000">6</td>
+<td bgcolor="#FFC000">67</td>
+<td bgcolor="#FFC000">0.224080</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">2</td>
+<td bgcolor="#FFC000">7</td>
+<td bgcolor="#FFC000">65</td>
+<td bgcolor="#FFC000">0.217391</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>8</td>
+<td>29</td>
+<td>0.096990</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race3" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>3</td>
+<td>1</td>
+<td>100</td>
+<td>0.186220</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>2</td>
+<td>94</td>
+<td>0.175047</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>0.003724</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>4</td>
+<td>103</td>
+<td>0.191806</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>5</td>
+<td>23</td>
+<td>0.042831</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>6</td>
+<td>43</td>
+<td>0.080074</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>7</td>
+<td>5</td>
+<td>0.009311</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>8</td>
+<td>106</td>
+<td>0.197393</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>9</td>
+<td>26</td>
+<td>0.048417</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>10</td>
+<td>23</td>
+<td>0.042831</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>11</td>
+<td>11</td>
+<td>0.020484</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>12</td>
+<td>1</td>
+<td>0.001862</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race4" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>4</td>
+<td>1</td>
+<td>107</td>
+<td>0.195612</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>2</td>
+<td>96</td>
+<td>0.175503</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>0.014625</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>4</td>
+<td>6</td>
+<td>0.010969</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>5</td>
+<td>104</td>
+<td>0.190128</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>6</td>
+<td>71</td>
+<td>0.129799</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>7</td>
+<td>20</td>
+<td>0.036563</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>8</td>
+<td>1</td>
+<td>0.001828</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>9</td>
+<td>41</td>
+<td>0.074954</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>10</td>
+<td>91</td>
+<td>0.166362</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>11</td>
+<td>1</td>
+<td>0.001828</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>12</td>
+<td>1</td>
+<td>0.001828</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race5" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>5</td>
+<td>1</td>
+<td>18</td>
+<td>0.032316</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>2</td>
+<td>89</td>
+<td>0.159785</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>3</td>
+<td>34</td>
+<td>0.061041</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>0.007181</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>5</td>
+<td>74</td>
+<td>0.132855</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>6</td>
+<td>42</td>
+<td>0.075404</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>7</td>
+<td>79</td>
+<td>0.141831</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>8</td>
+<td>39</td>
+<td>0.070018</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>9</td>
+<td>32</td>
+<td>0.057451</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>10</td>
+<td>17</td>
+<td>0.030521</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">5</td>
+<td bgcolor="#FFC000">11</td>
+<td bgcolor="#FFC000">119</td>
+<td bgcolor="#FFC000">0.213645</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>12</td>
+<td>10</td>
+<td>0.017953</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race6" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>6</td>
+<td>1</td>
+<td>29</td>
+<td>0.053704</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>2</td>
+<td>73</td>
+<td>0.135185</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>3</td>
+<td>7</td>
+<td>0.012963</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>4</td>
+<td>50</td>
+<td>0.092593</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>5</td>
+<td>74</td>
+<td>0.137037</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>6</td>
+<td>35</td>
+<td>0.064815</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>7</td>
+<td>41</td>
+<td>0.075926</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>8</td>
+<td>89</td>
+<td>0.164815</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>9</td>
+<td>8</td>
+<td>0.014815</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>10</td>
+<td>1</td>
+<td>0.001852</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>11</td>
+<td>34</td>
+<td>0.062963</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>12</td>
+<td>99</td>
+<td>0.183333</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race7" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>7</td>
+<td>1</td>
+<td>75</td>
+<td>0.139665</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>2</td>
+<td>38</td>
+<td>0.070764</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>3</td>
+<td>38</td>
+<td>0.070764</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>4</td>
+<td>52</td>
+<td>0.096834</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>5</td>
+<td>109</td>
+<td>0.202980</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>6</td>
+<td>27</td>
+<td>0.050279</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>7</td>
+<td>23</td>
+<td>0.042831</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>8</td>
+<td>34</td>
+<td>0.063315</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>9</td>
+<td>2</td>
+<td>0.003724</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>10</td>
+<td>72</td>
+<td>0.134078</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>11</td>
+<td>60</td>
+<td>0.111732</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>12</td>
+<td>7</td>
+<td>0.013035</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race8" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>8</td>
+<td>1</td>
+<td>29</td>
+<td>0.088685</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>2</td>
+<td>19</td>
+<td>0.058104</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">8</td>
+<td bgcolor="#FFC000">3</td>
+<td bgcolor="#FFC000">73</td>
+<td bgcolor="#FFC000">0.223242</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>4</td>
+<td>64</td>
+<td>0.195719</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>5</td>
+<td>66</td>
+<td>0.201835</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>6</td>
+<td>25</td>
+<td>0.076453</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>7</td>
+<td>18</td>
+<td>0.055046</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>8</td>
+<td>20</td>
+<td>0.061162</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>9</td>
+<td>3</td>
+<td>0.009174</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>10</td>
+<td>1</td>
+<td>0.003058</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>11</td>
+<td>3</td>
+<td>0.009174</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>12</td>
+<td>6</td>
+<td>0.018349</td>
+</tr>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race9" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race10" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></p>
+        </div>
+
+        <div id="Race11" class="tabcontent">
+          <p><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+
+<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></p>
+        </div>
+        
+        <h3>powered by rko@horse.tips</h3>
+    </body>
+</html>
