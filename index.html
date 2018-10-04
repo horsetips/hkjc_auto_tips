@@ -77,11 +77,29 @@
                 border-top: none;
                 font-size: 8px;
             }
+            
+            #btn1 {font-weight: bold;}
+            #btn2 {font-weight: bold;}
+            #btn3 {font-weight: bold;}
+            #btn4 {font-weight: bold;}
+            #btn5 {font-weight: bold;}
+            #btn6 {font-weight: bold;}
+            #btn7 {font-weight: bold;}
+            #btn8 {font-weight: bold;}
+            #btn9 {font-weight: bold;}
+            #btn10 {font-weight: bold;}
+            #btn11 {display: none;}
 
+            .center {
+                margin:auto; 
+                width:640px; 
+                border:3px solid gray; 
+                padding:10px;
+            }
         </style>
 
         <script>
-            function openCity(evt, cityName) {
+            function openRace(evt, raceNo) {
                 // Declare all variables
                 var i, tabcontent, tablinks;
 
@@ -98,7 +116,7 @@
                 }
 
                 // Show the current tab, and add an "active" class to the button that opened the tab
-                document.getElementById(cityName).style.display = "block";
+                document.getElementById(raceNo).style.display = "block";
                 evt.currentTarget.className += " active";
             } 
         </script>
@@ -113,37 +131,302 @@
         </div>
         <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
 
-        <h1>2018/10/03</h1>
-        <h3><span style="display:none">race 1 | horse 9<br>
-race 2 | horse 5<br>
-race 2 | horse 6<br>
-race 2 | horse 7<br>
-race 5 | horse 11<br>
-race 8 | horse 3<br>
+        <h1>2018/10/01</h1>
+        <h3><span style="display:none">race 1 | horse 6<br>
+race 1 | horse 9<br>
+race 7 | horse 1<br>
+race 7 | horse 3<br>
 </span></h3><br>
         
         <!-- Tab links -->
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'Race1')">場次1</button>
-          <button class="tablinks" onclick="openCity(event, 'Race2')">場次2</button>
-          <button class="tablinks" onclick="openCity(event, 'Race3')">場次3</button>
-          <button class="tablinks" onclick="openCity(event, 'Race4')">場次4</button>
-          <button class="tablinks" onclick="openCity(event, 'Race5')">場次5</button>
-          <button class="tablinks" onclick="openCity(event, 'Race6')">場次6</button>
-          <button class="tablinks" onclick="openCity(event, 'Race7')">場次7</button>
-          <button class="tablinks" onclick="openCity(event, 'Race8')">場次8</button>
-          <button class="tablinks" onclick="openCity(event, 'Race9')">場次9</button>
-          <button class="tablinks" onclick="openCity(event, 'Race10')">場次10</button>
-          <button class="tablinks" onclick="openCity(event, 'Race11')">場次11</button>
+        <div class="tab center">
+          <button id="btn1" class="tablinks" onclick="openRace(event, 'Race1')">場次1</button>
+          <button id="btn2" class="tablinks" onclick="openRace(event, 'Race2')">場次2</button>
+          <button id="btn3" class="tablinks" onclick="openRace(event, 'Race3')">場次3</button>
+          <button id="btn4" class="tablinks" onclick="openRace(event, 'Race4')">場次4</button>
+          <button id="btn5" class="tablinks" onclick="openRace(event, 'Race5')">場次5</button>
+          <button id="btn6" class="tablinks" onclick="openRace(event, 'Race6')">場次6</button>
+          <button id="btn7" class="tablinks" onclick="openRace(event, 'Race7')">場次7</button>
+          <button id="btn8" class="tablinks" onclick="openRace(event, 'Race8')">場次8</button>
+          <button id="btn9" class="tablinks" onclick="openRace(event, 'Race9')">場次9</button>
+          <button id="btn10" class="tablinks" onclick="openRace(event, 'Race10')">場次10</button>
+          <button id="btn11" class="tablinks" onclick="openRace(event, 'Race11')">場次11</button>
         </div>
 
         <!-- Tab content -->
-        <div id="Race1" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
+        <div class="center">
+            <div id="Race1" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 1</td></tr></thead><thead>
 <tr style="text-align: right;">
 
-<td>場次</td>
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>4</td>
+<td>0.013468</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>8</td>
+<td>0.026936</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>42</td>
+<td>0.141414</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>2</td>
+<td>0.006734</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>2</td>
+<td>0.006734</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">6</td>
+<td bgcolor="#FFC000">69</td>
+<td bgcolor="#FFC000">0.232323</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>62</td>
+<td>0.208754</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>1</td>
+<td>0.003367</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">9</td>
+<td bgcolor="#FFC000">71</td>
+<td bgcolor="#FFC000">0.239057</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>1</td>
+<td>0.003367</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>2</td>
+<td>0.006734</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>33</td>
+<td>0.111111</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race2" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 2</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>36</td>
+<td>0.120000</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>23</td>
+<td>0.076667</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>22</td>
+<td>0.073333</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>21</td>
+<td>0.070000</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>24</td>
+<td>0.080000</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>31</td>
+<td>0.103333</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>1</td>
+<td>0.003333</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>53</td>
+<td>0.176667</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>46</td>
+<td>0.153333</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>7</td>
+<td>0.023333</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>26</td>
+<td>0.086667</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>10</td>
+<td>0.033333</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race3" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 3</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>91</td>
+<td>0.168207</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>36</td>
+<td>0.066543</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>106</td>
+<td>0.195933</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>76</td>
+<td>0.140481</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>1</td>
+<td>0.001848</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>104</td>
+<td>0.192237</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>60</td>
+<td>0.110906</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>1</td>
+<td>0.001848</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>22</td>
+<td>0.040665</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>41</td>
+<td>0.075786</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>1</td>
+<td>0.001848</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>1</td>
+<td>0.001848</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>1</td>
+<td>0.001848</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race4" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 4</td></tr></thead><thead>
+<tr style="text-align: right;">
+
 <td>馬號</td>
 <td>評分</td>
 <td>指數</td>
@@ -154,368 +437,350 @@ race 8 | horse 3<br>
 
 <td>1</td>
 <td>1</td>
-<td>10</td>
-<td>0.031250</td>
+<td>0.001855</td>
 </tr>
 <tr>
 
-<td>1</td>
 <td>2</td>
-<td>8</td>
-<td>0.025000</td>
+<td>60</td>
+<td>0.111317</td>
 </tr>
 <tr>
 
-<td>1</td>
 <td>3</td>
-<td>13</td>
-<td>0.040625</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>4</td>
-<td>20</td>
-<td>0.062500</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>5</td>
-<td>58</td>
-<td>0.181250</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>6</td>
-<td>46</td>
-<td>0.143750</td>
-</tr>
-<tr>
-
-<td>1</td>
 <td>7</td>
-<td>25</td>
-<td>0.078125</td>
+<td>0.012987</td>
 </tr>
+<tr>
+
+<td>4</td>
+<td>106</td>
+<td>0.196660</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>1</td>
+<td>0.001855</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>57</td>
+<td>0.105751</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>84</td>
+<td>0.155844</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>67</td>
+<td>0.124304</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>8</td>
+<td>0.014842</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>5</td>
+<td>0.009276</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>1</td>
+<td>0.001855</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>79</td>
+<td>0.146568</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>62</td>
+<td>0.115028</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>1</td>
+<td>0.001855</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race5" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 5</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
 <tr>
 
 <td>1</td>
 <td>8</td>
-<td>50</td>
-<td>0.156250</td>
+<td>0.014870</td>
 </tr>
+<tr>
+
+<td>2</td>
+<td>14</td>
+<td>0.026022</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>1</td>
+<td>0.001859</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>87</td>
+<td>0.161710</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>74</td>
+<td>0.137546</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>36</td>
+<td>0.066914</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>1</td>
+<td>0.001859</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>29</td>
+<td>0.053903</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>97</td>
+<td>0.180297</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>26</td>
+<td>0.048327</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>1</td>
+<td>0.001859</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>55</td>
+<td>0.102230</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>1</td>
+<td>0.001859</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>108</td>
+<td>0.200743</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race6" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 6</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>59</td>
+<td>0.111321</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>13</td>
+<td>0.024528</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>1</td>
+<td>0.001887</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>106</td>
+<td>0.200000</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>40</td>
+<td>0.075472</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>43</td>
+<td>0.081132</td>
+</tr>
+<tr>
+
+<td>7</td>
+<td>105</td>
+<td>0.198113</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>1</td>
+<td>0.001887</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>6</td>
+<td>0.011321</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>34</td>
+<td>0.064151</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>2</td>
+<td>0.003774</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>62</td>
+<td>0.116981</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>57</td>
+<td>0.107547</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>1</td>
+<td>0.001887</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race7" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 7</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
 <tr>
 
 <td bgcolor="#FFC000">1</td>
-<td bgcolor="#FFC000">9</td>
-<td bgcolor="#FFC000">73</td>
-<td bgcolor="#FFC000">0.228125</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>10</td>
-<td>11</td>
-<td>0.034375</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>11</td>
-<td>2</td>
-<td>0.006250</td>
-</tr>
-<tr>
-
-<td>1</td>
-<td>12</td>
-<td>4</td>
-<td>0.012500</td>
-</tr>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race2" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>2</td>
-<td>1</td>
-<td>37</td>
-<td>0.123746</td>
+<td bgcolor="#FFC000">120</td>
+<td bgcolor="#FFC000">0.227704</td>
 </tr>
 <tr>
 
 <td>2</td>
-<td>2</td>
-<td>2</td>
-<td>0.006689</td>
-</tr>
-<tr>
-
-<td>2</td>
-<td>3</td>
-<td>28</td>
-<td>0.093645</td>
-</tr>
-<tr>
-
-<td>2</td>
-<td>4</td>
-<td>3</td>
-<td>0.010033</td>
-</tr>
-<tr>
-
-<td bgcolor="#FFC000">2</td>
-<td bgcolor="#FFC000">5</td>
-<td bgcolor="#FFC000">68</td>
-<td bgcolor="#FFC000">0.227425</td>
-</tr>
-<tr>
-
-<td bgcolor="#FFC000">2</td>
-<td bgcolor="#FFC000">6</td>
-<td bgcolor="#FFC000">67</td>
-<td bgcolor="#FFC000">0.224080</td>
-</tr>
-<tr>
-
-<td bgcolor="#FFC000">2</td>
-<td bgcolor="#FFC000">7</td>
-<td bgcolor="#FFC000">65</td>
-<td bgcolor="#FFC000">0.217391</td>
-</tr>
-<tr>
-
-<td>2</td>
-<td>8</td>
-<td>29</td>
-<td>0.096990</td>
-</tr>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race3" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>3</td>
-<td>1</td>
-<td>100</td>
-<td>0.186220</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>2</td>
-<td>94</td>
-<td>0.175047</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>0.003724</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>4</td>
-<td>103</td>
-<td>0.191806</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>5</td>
-<td>23</td>
-<td>0.042831</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>6</td>
-<td>43</td>
-<td>0.080074</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>7</td>
-<td>5</td>
-<td>0.009311</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>8</td>
-<td>106</td>
-<td>0.197393</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>9</td>
-<td>26</td>
-<td>0.048417</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>10</td>
-<td>23</td>
-<td>0.042831</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>11</td>
-<td>11</td>
-<td>0.020484</td>
-</tr>
-<tr>
-
-<td>3</td>
-<td>12</td>
-<td>1</td>
-<td>0.001862</td>
-</tr>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race4" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>4</td>
-<td>1</td>
 <td>107</td>
-<td>0.195612</td>
+<td>0.203036</td>
+</tr>
+<tr>
+
+<td bgcolor="#FFC000">3</td>
+<td bgcolor="#FFC000">120</td>
+<td bgcolor="#FFC000">0.227704</td>
 </tr>
 <tr>
 
 <td>4</td>
-<td>2</td>
-<td>96</td>
-<td>0.175503</td>
+<td>82</td>
+<td>0.155598</td>
 </tr>
 <tr>
 
-<td>4</td>
-<td>3</td>
-<td>8</td>
-<td>0.014625</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>4</td>
-<td>6</td>
-<td>0.010969</td>
-</tr>
-<tr>
-
-<td>4</td>
 <td>5</td>
-<td>104</td>
-<td>0.190128</td>
+<td>31</td>
+<td>0.058824</td>
 </tr>
 <tr>
 
-<td>4</td>
 <td>6</td>
-<td>71</td>
-<td>0.129799</td>
+<td>44</td>
+<td>0.083491</td>
 </tr>
 <tr>
 
-<td>4</td>
 <td>7</td>
-<td>20</td>
-<td>0.036563</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>8</td>
-<td>1</td>
-<td>0.001828</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>9</td>
-<td>41</td>
-<td>0.074954</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>10</td>
-<td>91</td>
-<td>0.166362</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>11</td>
-<td>1</td>
-<td>0.001828</td>
-</tr>
-<tr>
-
-<td>4</td>
-<td>12</td>
-<td>1</td>
-<td>0.001828</td>
+<td>23</td>
+<td>0.043643</td>
 </tr>
 </tbody>
 </table></p>
-        </div>
+            </div>
 
-        <div id="Race5" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
+            <div id="Race8" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 8</td></tr></thead><thead>
 <tr style="text-align: right;">
 
-<td>場次</td>
 <td>馬號</td>
 <td>評分</td>
 <td>指數</td>
@@ -524,198 +789,97 @@ race 8 | horse 3<br>
 <tbody>
 <tr>
 
-<td>5</td>
 <td>1</td>
-<td>18</td>
-<td>0.032316</td>
+<td>51</td>
+<td>0.171141</td>
 </tr>
 <tr>
 
-<td>5</td>
 <td>2</td>
-<td>89</td>
-<td>0.159785</td>
+<td>37</td>
+<td>0.124161</td>
 </tr>
 <tr>
 
-<td>5</td>
 <td>3</td>
-<td>34</td>
-<td>0.061041</td>
-</tr>
-<tr>
-
-<td>5</td>
-<td>4</td>
-<td>4</td>
-<td>0.007181</td>
-</tr>
-<tr>
-
-<td>5</td>
-<td>5</td>
-<td>74</td>
-<td>0.132855</td>
-</tr>
-<tr>
-
-<td>5</td>
-<td>6</td>
-<td>42</td>
-<td>0.075404</td>
-</tr>
-<tr>
-
-<td>5</td>
-<td>7</td>
-<td>79</td>
-<td>0.141831</td>
-</tr>
-<tr>
-
-<td>5</td>
 <td>8</td>
-<td>39</td>
-<td>0.070018</td>
+<td>0.026846</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>7</td>
+<td>0.023490</td>
 </tr>
 <tr>
 
 <td>5</td>
-<td>9</td>
-<td>32</td>
-<td>0.057451</td>
+<td>55</td>
+<td>0.184564</td>
 </tr>
 <tr>
 
-<td>5</td>
-<td>10</td>
+<td>6</td>
 <td>17</td>
-<td>0.030521</td>
+<td>0.057047</td>
 </tr>
 <tr>
 
-<td bgcolor="#FFC000">5</td>
-<td bgcolor="#FFC000">11</td>
-<td bgcolor="#FFC000">119</td>
-<td bgcolor="#FFC000">0.213645</td>
-</tr>
-<tr>
-
-<td>5</td>
-<td>12</td>
-<td>10</td>
-<td>0.017953</td>
-</tr>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race6" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>6</td>
+<td>7</td>
 <td>1</td>
+<td>0.003356</td>
+</tr>
+<tr>
+
+<td>8</td>
 <td>29</td>
-<td>0.053704</td>
+<td>0.097315</td>
 </tr>
 <tr>
 
-<td>6</td>
-<td>2</td>
-<td>73</td>
-<td>0.135185</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>3</td>
-<td>7</td>
-<td>0.012963</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>4</td>
-<td>50</td>
-<td>0.092593</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>5</td>
-<td>74</td>
-<td>0.137037</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>6</td>
-<td>35</td>
-<td>0.064815</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>7</td>
-<td>41</td>
-<td>0.075926</td>
-</tr>
-<tr>
-
-<td>6</td>
-<td>8</td>
-<td>89</td>
-<td>0.164815</td>
-</tr>
-<tr>
-
-<td>6</td>
 <td>9</td>
-<td>8</td>
-<td>0.014815</td>
+<td>21</td>
+<td>0.070470</td>
 </tr>
 <tr>
 
-<td>6</td>
 <td>10</td>
 <td>1</td>
-<td>0.001852</td>
+<td>0.003356</td>
 </tr>
 <tr>
 
-<td>6</td>
 <td>11</td>
-<td>34</td>
-<td>0.062963</td>
+<td>45</td>
+<td>0.151007</td>
 </tr>
 <tr>
 
-<td>6</td>
 <td>12</td>
-<td>99</td>
-<td>0.183333</td>
+<td>1</td>
+<td>0.003356</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>19</td>
+<td>0.063758</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>6</td>
+<td>0.020134</td>
 </tr>
 </tbody>
 </table></p>
-        </div>
+            </div>
 
-        <div id="Race7" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
+            <div id="Race9" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 9</td></tr></thead><thead>
 <tr style="text-align: right;">
 
-<td>場次</td>
 <td>馬號</td>
 <td>評分</td>
 <td>指數</td>
@@ -724,238 +888,194 @@ race 8 | horse 3<br>
 <tbody>
 <tr>
 
-<td>7</td>
 <td>1</td>
-<td>75</td>
-<td>0.139665</td>
+<td>57</td>
+<td>0.105751</td>
 </tr>
 <tr>
 
-<td>7</td>
 <td>2</td>
-<td>38</td>
-<td>0.070764</td>
+<td>34</td>
+<td>0.063080</td>
 </tr>
 <tr>
 
-<td>7</td>
 <td>3</td>
-<td>38</td>
-<td>0.070764</td>
+<td>30</td>
+<td>0.055659</td>
 </tr>
 <tr>
 
-<td>7</td>
 <td>4</td>
-<td>52</td>
-<td>0.096834</td>
+<td>12</td>
+<td>0.022263</td>
 </tr>
 <tr>
 
-<td>7</td>
 <td>5</td>
-<td>109</td>
-<td>0.202980</td>
+<td>108</td>
+<td>0.200371</td>
+</tr>
+<tr>
+
+<td>6</td>
+<td>12</td>
+<td>0.022263</td>
 </tr>
 <tr>
 
 <td>7</td>
+<td>58</td>
+<td>0.107607</td>
+</tr>
+<tr>
+
+<td>8</td>
+<td>1</td>
+<td>0.001855</td>
+</tr>
+<tr>
+
+<td>9</td>
+<td>3</td>
+<td>0.005566</td>
+</tr>
+<tr>
+
+<td>10</td>
+<td>95</td>
+<td>0.176252</td>
+</tr>
+<tr>
+
+<td>11</td>
+<td>69</td>
+<td>0.128015</td>
+</tr>
+<tr>
+
+<td>12</td>
+<td>11</td>
+<td>0.020408</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>6</td>
+<td>0.011132</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>43</td>
+<td>0.079777</td>
+</tr>
+</tbody>
+</table></p>
+            </div>
+
+            <div id="Race10" class="tabcontent">
+              <p><table border="1" class="dataframe">
+<thead><tr><td colspan=3>場次 10</td></tr></thead><thead>
+<tr style="text-align: right;">
+
+<td>馬號</td>
+<td>評分</td>
+<td>指數</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+<td>1</td>
+<td>4</td>
+<td>0.007477</td>
+</tr>
+<tr>
+
+<td>2</td>
+<td>92</td>
+<td>0.171963</td>
+</tr>
+<tr>
+
+<td>3</td>
+<td>105</td>
+<td>0.196262</td>
+</tr>
+<tr>
+
+<td>4</td>
+<td>98</td>
+<td>0.183178</td>
+</tr>
+<tr>
+
+<td>5</td>
+<td>22</td>
+<td>0.041121</td>
+</tr>
+<tr>
+
 <td>6</td>
 <td>27</td>
-<td>0.050279</td>
+<td>0.050467</td>
 </tr>
 <tr>
 
 <td>7</td>
-<td>7</td>
-<td>23</td>
-<td>0.042831</td>
-</tr>
-<tr>
-
-<td>7</td>
-<td>8</td>
-<td>34</td>
-<td>0.063315</td>
-</tr>
-<tr>
-
-<td>7</td>
-<td>9</td>
-<td>2</td>
-<td>0.003724</td>
-</tr>
-<tr>
-
-<td>7</td>
-<td>10</td>
-<td>72</td>
-<td>0.134078</td>
-</tr>
-<tr>
-
-<td>7</td>
-<td>11</td>
-<td>60</td>
-<td>0.111732</td>
-</tr>
-<tr>
-
-<td>7</td>
-<td>12</td>
-<td>7</td>
-<td>0.013035</td>
-</tr>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race8" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>8</td>
 <td>1</td>
-<td>29</td>
-<td>0.088685</td>
+<td>0.001869</td>
 </tr>
 <tr>
 
 <td>8</td>
-<td>2</td>
-<td>19</td>
-<td>0.058104</td>
-</tr>
-<tr>
-
-<td bgcolor="#FFC000">8</td>
-<td bgcolor="#FFC000">3</td>
-<td bgcolor="#FFC000">73</td>
-<td bgcolor="#FFC000">0.223242</td>
-</tr>
-<tr>
-
-<td>8</td>
-<td>4</td>
-<td>64</td>
-<td>0.195719</td>
-</tr>
-<tr>
-
-<td>8</td>
-<td>5</td>
-<td>66</td>
-<td>0.201835</td>
-</tr>
-<tr>
-
-<td>8</td>
-<td>6</td>
 <td>25</td>
-<td>0.076453</td>
+<td>0.046729</td>
 </tr>
 <tr>
 
-<td>8</td>
-<td>7</td>
-<td>18</td>
-<td>0.055046</td>
-</tr>
-<tr>
-
-<td>8</td>
-<td>8</td>
-<td>20</td>
-<td>0.061162</td>
-</tr>
-<tr>
-
-<td>8</td>
 <td>9</td>
-<td>3</td>
-<td>0.009174</td>
+<td>2</td>
+<td>0.003738</td>
 </tr>
 <tr>
 
-<td>8</td>
 <td>10</td>
-<td>1</td>
-<td>0.003058</td>
+<td>69</td>
+<td>0.128972</td>
 </tr>
 <tr>
 
-<td>8</td>
 <td>11</td>
-<td>3</td>
-<td>0.009174</td>
+<td>2</td>
+<td>0.003738</td>
 </tr>
 <tr>
 
-<td>8</td>
 <td>12</td>
-<td>6</td>
-<td>0.018349</td>
+<td>67</td>
+<td>0.125234</td>
+</tr>
+<tr>
+
+<td>13</td>
+<td>1</td>
+<td>0.001869</td>
+</tr>
+<tr>
+
+<td>14</td>
+<td>20</td>
+<td>0.037383</td>
 </tr>
 </tbody>
 </table></p>
-        </div>
+            </div>
 
-        <div id="Race9" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race10" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table></p>
-        </div>
-
-        <div id="Race11" class="tabcontent">
-          <p><table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-
-<td>場次</td>
-<td>馬號</td>
-<td>評分</td>
-<td>指數</td>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table></p>
+            <div id="Race11" class="tabcontent">
+              <p>Race-Table11</p>
+            </div>
         </div>
         
         <h3>powered by  <a href="mailto:horse.tips@usa.com">rko@horse.tips</a></h3>
