@@ -121,7 +121,7 @@
                 // Show the current tab, and add an "active" class to the button that opened the tab
                 document.getElementById(raceNo).style.display = "block";
                 evt.currentTarget.className += " active";
-                num_rows = document.getElementById(raceNo).getElementsByTagName("table")[0].getElementsByTagName('tr').length
+                num_rows = document.getElementById(raceNo).getElementsByTagName("table")[0].getElementsByTagName('tr').length - 2
                 if (num_rows < 9) {
                     document.getElementById(raceNo).style.paddingBottom = "50px";                    
                 } else {
