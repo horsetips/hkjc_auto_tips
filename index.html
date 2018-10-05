@@ -121,6 +121,12 @@
                 // Show the current tab, and add an "active" class to the button that opened the tab
                 document.getElementById(raceNo).style.display = "block";
                 evt.currentTarget.className += " active";
+                num_rows = document.getElementById(raceNo).getElementsByTagName("table")[0].getElementsByTagName('tr').length
+                if (num_rows < 9) {
+                    document.getElementById(raceNo).style.paddingBottom = "50px";                    
+                } else {
+                    document.getElementById(raceNo).style.paddingBottom = "10px";
+                }
             } 
         </script>
     </head>
@@ -155,7 +161,7 @@ race 10 | horse 1<br>
         </div>
 
         <!-- Tab content -->
-        <div class="center">
+        <div class="center" style="padding-bottom:10px;">
             <div id="Race1" class="tabcontent">
               <span style="float:right;"><img src="tips_bar_1.png"></span>
               <p><table border="1" class="dataframe">
